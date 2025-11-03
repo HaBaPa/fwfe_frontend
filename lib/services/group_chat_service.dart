@@ -115,7 +115,7 @@ class GroupChatService {
   }
 
   Future<void> markAsReadRest(int messageId) async {
-    final url = Uri.parse('https://fwfe.duckdns.org/api/chat/mark-read/$messageId');
+    final url = Uri.parse('https://fwfedevha.duckdns.org/api/chat/mark-read/$messageId');
     final response = await http.put(
       url,
       headers: {
