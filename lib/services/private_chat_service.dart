@@ -33,7 +33,7 @@ class PrivateChatService {
 
     _stompClient = StompClient(
       config: StompConfig.SockJS(
-        url: 'https://fwfe.duckdns.org/ws',
+        url: 'https://fwfedevha.duckdns.org/ws',
         stompConnectHeaders: {'Authorization': 'Bearer $_token'},
         webSocketConnectHeaders: {'Authorization': 'Bearer $_token'},
         onConnect: (StompFrame frame) {
